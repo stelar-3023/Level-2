@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The toJSON() Method</title>
+  </head>
+  <body>
+    <h1>The toJSON() Method</h1>
+    <script>
+      const person = {
+        name: "Steve",
+        age: 45,
+        toJSON() {
+          return `This is ${this.name} and he is ${this.age} years old!`
+        }
+      };
+      const dataObj = {
+        data: person,
+      };
+      console.log(JSON.stringify(dataObj))
+    </script>
+  </body>
+</html>
