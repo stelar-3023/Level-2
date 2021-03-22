@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prevent Default</title>
+  </head>
+  <body>
+    <h2 class="title">Events: Prevent Default - Javascript</h2>
+
+    <a href="http://www.youtube.com" id="ytLink">YouTube</a>
+    <p>Enable Link: <input type="checkbox" id="cb" /></p>
+
+    <script type="text/javascript">
+      const ytLink = document.getElementById("ytLink");
+
+      const cb = document.getElementById("cb");
+
+      ytLink.addEventListener("click", function (event) {
+        if (!cb.checked) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>
