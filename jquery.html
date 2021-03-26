@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>jQuery training</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="/Code_X/Level2/flex.css" />
   </head>
   <body>
@@ -30,10 +35,23 @@
       <li class="nav-item"><a href="#6">Item #6</a></li>
     </ul>
 
+    <div class="carousel" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+      <div><h3>1</h3></div>
+      <div><h3>2</h3></div>
+      <div><h3>3</h3></div>
+      <div><h3>4</h3></div>
+      <div><h3>5</h3></div>
+      <div><h3>6</h3></div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="/Code_X/Level2/script.js"></script>
   </body>
