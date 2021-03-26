@@ -1,20 +1,20 @@
-// const str = `{"data": [{ "shoppingCart": "Tenzo tea", "items": ["tea", "whisk"]}]}`;
+const str = `{"data": [{ "shoppingCart": "Tenzo tea", "items": ["tea", "whisk"]}]}`;
 
-// const obj = {data: [{ shoppingCart: "Tenzo tea", "items": ["tea", "whisk"]}]};
+const obj = { data: [{ shoppingCart: "Tenzo tea", items: ["tea", "whisk"] }] };
 
-// // console.log(strdata[0].shoppingCart);
+// console.log(strdata[0].shoppingCart);
 
-// console.log(obj.data[0].shoppingCart)
+console.log(obj.data[0].shoppingCart);
 
-// console.log(JSON.parse(str).data[0].items)
+console.log(JSON.parse(str).data[0].items);
 
-// $.get("/Code_X/Level2/getJSON.json").done((data) => {
-//   console.log(typeof data);
-//   console.log(data);
-//   const dataToString = JSON.stringify(data);
-//   console.log(typeof dataToString);
-//   console.log(dataToString);
-// });
+$.get("/Code_X/Level2/getJSON.json").done((data) => {
+  console.log(typeof data);
+  console.log(data);
+  const dataToString = JSON.stringify(data);
+  console.log(typeof dataToString);
+  console.log(dataToString);
+});
 
 // fetch("/Code_X/Level2/getJSON.json")
 //   .then((data) => data.json())
@@ -55,3 +55,9 @@ $("#my-button").on("click", function () {
 $("#my-list").on("click", "li", function () {
   $("li").css("background-color", "yellow");
 });
+
+$(".carousel").on("swipe", function (event, slick, direction) {
+  console.log(direction);
+  // left
+});
+$(".carousel").slick();
