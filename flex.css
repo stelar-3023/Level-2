@@ -5,7 +5,7 @@
   margin: 80px auto;
   border-radius: 8px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   flex-wrap: wrap;
   flex-flow: row wrap; /* same as 2 prev. lines */
   justify-content: space-evenly;
@@ -29,4 +29,8 @@
 
 .three {
   align-self: flex-end;
+}
+
+.active {
+  background-color: aquamarine;
 }
