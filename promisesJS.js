@@ -1,17 +1,17 @@
-let p = new Promise((resolve, reject) => {
-  let a = 1 + 2;
-  if (a == 2) {
-    resolve("Success");
-  } else {
-    reject("Failed");
-  }
-});
+// let p = new Promise((resolve, reject) => {
+//   let a = 1 + 2;
+//   if (a == 2) {
+//     resolve("Success");
+//   } else {
+//     reject("Failed");
+//   }
+// });
 
-p.then((message) => {
-  console.log(message);
-}).catch((message) => {
-  console.log(message);
-});
+// p.then((message) => {
+//   console.log(message);
+// }).catch((message) => {
+//   console.log(message);
+// });
 
 function makeRequest(location) {
   return new Promise((resolve, reject) => {
@@ -45,7 +45,7 @@ function processRequest(response) {
 
 async function doWork() {
   try {
-    const response = await makeRequest("Google");
+    const response = await makeRequest("Facebook");
     console.log("Response received");
     const processedResponse = await processRequest(response);
     console.log(processedResponse);
