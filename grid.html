@@ -19,8 +19,9 @@
 
         display: grid;
 
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 50px 1fr 1fr 50px;
+        grid-template: 50px 1fr 1fr 50px / repeat(3, 1fr);
+        /* grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 1fr 1fr 50px; */
 
         gap: 10px;
 
@@ -51,7 +52,7 @@
   <body>
     <div class="container">
       <div class="header">Header</div>
-      <div class="content-large">Content #1a</div>
+      <div class="content-large" style="color: red">Content #1a</div>
       <div class="content-large">Content #1b</div>
       <div class="content-small">Content #1c</div>
       <div class="content-small">Content #1d</div>
