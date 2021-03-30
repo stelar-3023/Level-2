@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <button id="fetchGet">Fetch Get</button>
+    <button id="fetchPost">Fetch Post</button>
+    <button id="fetchGetAsync">Fetch Get Async</button>
+    <button id="fetchPostAsync">Fetch Post Async</button>
+    <button id="fetchPutAsync">Fetch Put Async</button>
+    <button id="fetchDeleteAsync">Fetch Delete Async</button>
+
+    <script>
+      document.getElementById("fetchGet").addEventListener("click", fetchGet);
+      document.getElementById("fetchPost").addEventListener("click", fetchPost);
+      document
+        .getElementById("fetchGetAsync")
+        .addEventListener("click", fetchGetAsync);
+      document
+        .getElementById("fetchPostAsync")
+        .addEventListener("click", fetchPostAsync);
+      document
+        .getElementById("fetchPutAsync")
+        .addEventListener("click", fetchPutAsync);
+      document
+        .getElementById("fetchPutAsync")
+        .addEventListener("click", fetchDeleteAsync);
+    </script>
+    <h3 id="content"></h3>
+  </body>
+</html>
